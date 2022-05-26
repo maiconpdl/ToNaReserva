@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]To Na Reserva</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+   
+    <link rel="stylesheet" href="~/lib/Index.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/Cadastro.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/cadPrecos.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/cadProdutos.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/estilo.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/posto.css" asp-append-version="true" />
+
+    <link rel="stylesheet" href="~/lib/fontawesome-free-6.1.1-web/css/all.css" asp-append-version="true"/>
+
+</head>
+<body>
+    <header name="header">
+        <div id="divTitulo"><a style="text-decoration: none; display: inline; color: white;" asp-action="Index">TÔ NA RESERVA</a></div>
+        <input type="checkbox" id="checkboxMenu">
+        
+        @if (ViewBag.Posto == "Posto")
+            {
+                
+                <label for="checkboxMenu" id="menu" class="fa fa-solid fa-bars"></label>
+                
+                <nav>
+                    <ul id="listaMenu">
+                        <li><a asp-action="Index">INICIO</a></li>
+                        <li><a asp-action='cadastroPosto'>CADASTRO POSTO</a></li>
+                        <li><a asp-action='cadastroPrecos'>CADASTRO PREÇOS</a></li>
+                        <li><a asp-action='cadastroProdutos'>CADASTRO PRODUTOS</a></li>
+                        <li><a asp-action='Avaliacoes'>AVALIAÇÕES</a></li>
+                        <li><a asp-action='login'>SAIR</a></li>
+                    </ul>
+                </nav>
+            }
+            @if (ViewBag.Cliente == "Cliente")
+            {
+                
+                <label for="checkboxMenu" id="menu" class="fa fa-solid fa-bars"></label>
+                
+                <nav>
+                    <ul id="listaMenu">
+                        <li><a asp-action="Index">INICIO</a></li>
+                        <li><a asp-action='login'>SAIR</a></li>
+                    </ul>
+                </nav>
+            }
+                
+        
+            
+        <div id="divDivisao"></div>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="~/js/avaliacao.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

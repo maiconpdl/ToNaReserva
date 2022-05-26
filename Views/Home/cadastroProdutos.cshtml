@@ -1,0 +1,33 @@
+@model Models.Produto
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script type="text/javascript" src="../jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../lib/Index.js"></script>
+
+    </head>
+    <body style="background-color: #e5d675;">
+
+
+        <div class="divForm">
+            <form asp-action="CadastroProdutos">
+
+                    <input asp-for="nome" type="text" class="camposForm" placeholder="DESCRIÇÃO" id="txtNomeProduto"/>
+                    <input asp-for="categoria" type="text" class="camposForm" placeholder="CATEGORIA" id="txtCategoria"/>
+                    <input asp-for="valor" type="text" class="camposForm" placeholder="PREÇO" id="txtPrecoProduto"/>
+                    <input asp-for="quantidade" type="text" class="camposForm" placeholder="QUANTIDADE" id="txtPrecoProduto"/>
+                    
+                    <input id="selecionaImagem" type="file" accept="image/*" value="ADICIONAR IMAGEM"/>
+                        <div id="divImagemProduto">                
+                            <label for="selecionaImagem" id="selImagem">SELECIONAR IMAGEM</label>
+                        </div>
+                
+                    
+					<input type="submit" value="SALVAR"/>
+			</form>
+            
+        </div>
+    </body>
+</html>

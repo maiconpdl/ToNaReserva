@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+input[type="button"]{
+    background-color: #821fa5;
+	border: none;
+	font-size: 30px;
+	width: 210px;
+	margin: 30px auto 0 auto;
+	cursor: pointer;
+    display: block;
+    border-radius: 15px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+form#tipoCadastro a {
+    text-decoration: none;
+}
+
+a#voltar{
+    text-decoration: none;
+    color: #821fa5;
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight: 700px;
+}
+
+.container{
+    width: 420px;
+	margin: 150px auto 0 auto;
+    text-align: center;
+}

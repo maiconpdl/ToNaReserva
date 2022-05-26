@@ -1,0 +1,61 @@
+.avaliacao{
+    display: flex;    
+    width: 15%;
+}
+
+.estrela{
+    list-style-type: none;
+    
+    cursor: pointer;
+    color: #7700ff;
+    font-size: 35px;
+    height: 30px;
+}
+
+.estrela::before{
+    content: "\2605";
+}
+
+.estrela.ativo ~ .estrela::before{
+    content: "\2606";
+}
+
+.avaliacao:hover .estrela::before{
+    content: "\2605";
+}
+
+.estrela:hover ~ .estrela::before{
+    content: "\2606";
+}
+
+
+.nota{
+    display: flex;    
+    width: 15%;
+    vertical-align: bottom;
+}
+
+.estrelaNota{
+    list-style-type: none;
+    
+    cursor: pointer;
+    color: #7700ff;
+    font-size: 35px;
+    height: 30px;
+}
+
+.estrelaNota::before{
+    content: "\2605";
+}
+
+.estrelaNota.ativo ~ .estrelaNota::before{
+    content: "\2606";
+}
+
+.avaliacaoNota:hover .estrelaNota::before{
+    content: "\2605";
+}
+
+.estrelaNota:hover ~ .estrelaNota::before{
+    content: "\2606";
+}

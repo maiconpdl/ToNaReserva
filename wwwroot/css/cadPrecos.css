@@ -1,0 +1,30 @@
+.divForm{
+	
+	width: 420px;
+	margin: 150px auto 0 auto;
+    text-align: center;
+}
+
+
+input[type="submit"]{
+    width: 200px;
+    height: 40px;
+    background-color: #821fa5;
+    color: #fff;
+    margin-left: 120px;
+}
+
+input[type="checkbox"]:checked ~ .divForm{
+	text-align: center;
+	margin: 150px auto 0 auto;	
+}
+
+
+input{
+    display: block;
+	height: 55px;
+	width: 400px;
+	margin: 20px;
+	border-radius: 10px;
+	padding: 10px;
+}

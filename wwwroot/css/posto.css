@@ -1,0 +1,16 @@
+.divForm{
+	text-align: center;
+	margin-top: auto;
+	padding: 9%;	
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    background-color: #821fa5;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+}

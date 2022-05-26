@@ -1,0 +1,43 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+div#divForm input{
+	display: block;
+	height: 55px;
+	width: 400px;
+	margin: 20px;
+	border-radius: 10px;
+	padding: 10px;
+	border: none;
+}
+
+div#divForm{
+	width: 440px;
+	margin: 150px auto 0 auto;
+}
+
+div#divForm a{
+	text-decoration: none;
+	padding: 39px;
+	color: #821fa5;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+div#divForm a:hover{
+	text-decoration: underline;
+}
+
+div#divForm input[type="submit"]{
+	background-color: #821fa5;
+	border: none;
+	font-size: 30px;
+	width: 210px;
+	margin: 30px auto 0 auto;
+	cursor: pointer;
+	
+}
+
+

@@ -1,0 +1,90 @@
+/* _content/ToNaReserva/Views/Home/Index.cshtml.rz.scp.css */
+*[b-ljci5awxax]{
+	margin: 0px;
+	padding: 0px;
+}
+
+.divForm[b-ljci5awxax]{
+	text-align: center;
+	margin-top: auto;
+	padding: 9%;
+	
+}
+
+div#divTitulo[b-ljci5awxax]{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+#divDivisao[b-ljci5awxax]{
+	
+	background-color: #ffffff;
+	height: 5px;
+	margin-top: 40px;	
+}
+
+a[b-ljci5awxax]{
+	text-decoration: none;
+	color: #000;
+	margin: 0px;
+}
+
+ul[b-ljci5awxax]{
+	list-style: none;
+}
+
+input[type="checkbox"][b-ljci5awxax]{
+	display: none;
+}
+
+nav[b-ljci5awxax]{
+	background-color: rgba(235, 199, 41, 0.5);
+	width: 250px;
+	height: 100%;
+	position: absolute;
+	left: -250px;
+	transition: all .5s;
+}
+
+input[type="checkbox"]:checked ~ nav[b-ljci5awxax]{
+	transform: translateX(250px);
+}
+
+input[type="checkbox"]:checked ~ .divForm[b-ljci5awxax]{
+	text-align: center;
+	margin: auto 10px 0 200px;	
+}
+
+nav a[b-ljci5awxax]{
+	text-decoration: none;
+	display: block;
+	padding: 20px 5px;
+	color: #000;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+nav a:hover[b-ljci5awxax]{
+	background-color: rgb(221, 231, 131);
+	color: #000;
+}
+
+label#menu[b-ljci5awxax]{
+	
+	padding: 10px;
+	position: absolute;
+	z-index: 1;
+	font-size: 30px;
+	color: #fff;
+    cursor: pointer;
+}
+
+
+ul[b-ljci5awxax]{
+	top:90px;
+	position: absolute;
+	width: 100%;
+    margin: 0px;
+}
+/* _content/ToNaReserva/Views/Shared/_Layout.cshtml.rz.scp.css */
